@@ -91,75 +91,53 @@ body{
 
 @media (min-width: 768px) and (max-width: 1199.98px) { 
 	.container{ 		
-		margin-bottom: 100px;
-		width: 100%; 
-		margin-left: 90px; 
+	margin-bottom: 100px;
+	width: 100%; 
+	margin-left: 90px; 
 
-		}
-	
-		.container-elements img,
-		.container-elements h1{
-		
-		 align-content: center;		
-		 margin-top: 40px;	
-		 max-width: 50px;
-		 max-height: 40px;
-		 display: flex;
-		 justify-content: center;
-		 align-items: center;
-	
-		}
-		#spani{
-			position: absolute;
-			right: 1.4em; 
-			transform: translate(0,230%);
-			top: 50%;
-			cursor: pointer; 
-		
-		}
-		#spani2{
-			position: absolute;
-			right: 1.4em; 
-			transform: translate(0,55%);
-			top: 50%;
-			cursor: pointer; 
-		
-		}
-		.carousel{
-			flex-direction: column;
-		}
-
-		.image-active{
-			max-height: 350vh;
-			max-width: 200vh;
-		}
- }
-/* @media screen and (max-width: 800px) {
-	.container{ 		
-	margin-bottom: 80px;
-    width: 50%; 
-	margin-left: 10px; 
 	}
-
-	.container-elements img{
-	 margin-bottom: 10px;	
-	 max-width: 10px;
-	 max-height: 20px;
+	
+	.container-elements img,
+	.container-elements h1{
+		
+	 align-content: center;		
+	 margin-top: 40px;	
+	 max-width: 50px;
+	 max-height: 40px;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
-
+	
 	}
-	.container-elements h1{
-        margin-right: 10px;
+	#spani{
+	position: absolute;
+	right: 1.4em; 
+	transform: translate(0,230%);
+	top: 50%;
+	cursor: pointer; 
 		
-    }
-    
+	}
+	#spani2{
+	position: absolute;
+	right: 1.4em; 
+	transform: translate(0,55%);
+	top: 50%;
+	cursor: pointer; 
+		
+	}
+	.carousel{
+	flex-direction: column;
+	}
+
+	.image-active{
+	max-height: 350vh;
+	max-width: 200vh;
+	}
+ }
+
     
     
 
-    
-} */
 
 
 
