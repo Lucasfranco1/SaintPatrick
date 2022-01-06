@@ -1,4 +1,4 @@
-.boton.cuatro::after {
+.btn.four::after {
 	content: "";
 	width: 1px;
 	height: 1px;
@@ -12,7 +12,7 @@
 	transform-origin: center;
 }
 
-.boton.cuatro:hover::after {
+.btn.four:hover::after {
 	transform: scale(600);
 	background: rgba(163, 122, 9, 0.795);
 }
