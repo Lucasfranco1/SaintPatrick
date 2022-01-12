@@ -1,4 +1,3 @@
-
 /* Creamos nuestras variables, mediante :root accedemos a la ruta de css */
 :root{
     --yellow: #f0c44e;
@@ -89,45 +88,7 @@ header nav a.active{
     background-color: #f0c44e;
 }
 
-/*************** MAIN *************/
-.balance{
-    width: 72%;
-    margin: auto;
-}
 
-main{
-    padding: 10px 0;    
-    background: #fff;
-    margin-left: 90px;
-    margin-right: 100px;
-    border-top: 1px solid rgb(207, 202, 202);
-    border-right: 1px solid rgb(207, 202, 202);
-    border-bottom: 1px solid rgb(207, 202, 202);
-    border-left: 1px solid rgb(207, 202, 202);
-    border-radius: 23px;
-    
-}
-
-/* Para acceder al header del contenedor */
-main .balance{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;   
-}
-
-.balance h3{
-    font-weight: lighter;
-    font-size: 30px;
-}
-.balance h2{
-    font-weight: 400;
-    font-size: 50px;
-    color: #aaa;
-   
-}
-.balance h2 span{
-    font-size: 30px;
-}
 
 
 /* Operations */
@@ -145,10 +106,10 @@ section .operation{
     background: #fff;
     margin-left: 90px;
     margin-right: 100px;
-    border-top: 1px solid rgb(207, 202, 202);
-    border-right: 1px solid rgb(207, 202, 202);
-    border-bottom: 1px solid rgb(207, 202, 202);
-    border-left: 1px solid rgb(207, 202, 202);
+    border-top: 1px solid var(--blue-green-dark);
+    border-right: 1px solid var(--blue-green-dark);
+    border-bottom: 1px solid var(--blue-green-dark);
+    border-left: 1px solid var(--blue-green-dark);
     border-radius: 23px;
     
 }
@@ -191,19 +152,31 @@ section .operation{
 /* Btn */
 
 section .btn{
-    margin-top: 10px;
-    margin-left:50% ;
-    width: 4em;
-    height: 4em;
-    border-radius: 100%;
-    cursor: pointer;
-    background: #f0c44e;
-    border: none;
+    display: flex;
+	align-items: center; 
+    justify-content: center; 
+	margin-top: 2em;
+	margin-left: 29.5em;
+	width: 27%;
+	height: 50px;
+	background: #000;
+	color: #000;
+	
+	font-size: 20px;
+	font-weight: 18.75em;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+    transition: .5s ease all;
+	border-radius: 5px;
+	position: relative; 
+	overflow: hidden; 
+	background-color: #f0c44e;
     
 }
 
 section .btn:hover{
-    color: var(--blue-green-dark);
+    color: #000;
     filter: drop-shadow(0 0 5px var(--yellow)) drop-shadow(0 0 15px var(--yellow));
 }
 section .btn ico-icon{
@@ -282,6 +255,31 @@ footer .footer_logo h3{
     section .btn{
         margin-left: 50%;
     }
+
+    section .btn{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 2em;
+        margin-left: 38%;
+        width: 27%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+    
     footer .footer_logo h3{
         margin-top: 20px;
         text-align: initial;   
@@ -290,12 +288,7 @@ footer .footer_logo h3{
         font-size: 18px;
     
     }
-    /* footer img{
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        margin-left: 690px;
-    } */
+   
     
     
    
@@ -312,7 +305,66 @@ footer .footer_logo h3{
         margin-left: 160px;
         font-size: 18px;
     
+
     }
+    section .btn{
+        margin-left: 50%;
+    }
+
+    section .btn{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 2em;
+        margin-left: 48%;
+        width: 27%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+}
+
+@media screen and (max-width: 880px){
+     section .btn{
+        margin-left: 50%;
+    }
+
+    section .btn{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 2em;
+        margin-left: 16.5em;
+        width: 27%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+    
 }
 
 
@@ -330,6 +382,29 @@ footer .footer_logo h3{
     section .btn{
         margin-left: 50%;
     }
+    section .btn{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 2em;
+        margin-left: 8.5em;
+        width: 27%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
    }
 @media screen and (max-width: 751px){
  section .btn{
@@ -343,19 +418,35 @@ footer .footer_logo h3{
      margin-right: 60px;
      flex-direction: column;
  }
+ 
+
+section .btn{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 2em;
+    margin-left: 13.5em;
+    width: 27%;
+    height: 50px;
+    background: #000;
+    color: #000;
+    
+    font-size: 20px;
+    font-weight: 18.75em;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s ease all;
+    border-radius: 5px;
+    position: relative; 
+    overflow: hidden; 
+    background-color: #f0c44e;
+    
+}
 
 }
 @media screen and (max-width: 536px){
-    main .balance{
-        flex-direction: column;
-    }
-    main .balance h2{
-        margin-left: 30px;
-    }
-    main .balance h2 span{
-       margin: auto;
-       margin-left: 60px;
-    }
+    
     section{
         flex-direction: column;
     }
@@ -375,5 +466,31 @@ footer .footer_logo h3{
 
     section .btn{
         margin-left: 50%;
+    }
+    section .btn{
+        margin-left: 50%;
+    }
+    section .btn{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 2em;
+        margin-left: 200px;
+        width: 27%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
     }
    }
