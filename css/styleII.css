@@ -192,7 +192,7 @@ section .operation{
 
 section .btn{
     margin-top: 10px;
-    margin-left:50% ;
+    margin-left:90% ;
     width: 4em;
     height: 4em;
     border-radius: 100%;
@@ -211,6 +211,34 @@ section .btn ico-icon{
 
 }
 
+section .btn-t {
+    display: flex;
+	align-items: center; 
+    justify-content: center; 
+	margin-top: 1em;
+	margin-left: 31.5em;
+	width: 20%;
+	height: 50px;
+	background: #000;
+	color: #000;
+	
+	font-size: 20px;
+	font-weight: 18.75em;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+    transition: .5s ease all;
+	border-radius: 5px;
+	position: relative; 
+	overflow: hidden; 
+	background-color: #f0c44e;
+    
+}
+
+section .btn-t:hover{
+    color: #000;
+    filter: drop-shadow(0 0 5px var(--yellow)) drop-shadow(0 0 15px var(--yellow));
+}
 
 /* Footer */
 
@@ -280,8 +308,33 @@ footer .footer_logo h3{
     }
 
     section .btn{
-        margin-left: 50%;
+        margin-left: 90%;
     }
+
+    section .btn-t {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 1em;
+        margin-left: 26.5em;
+        width: 20%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+    
     footer .footer_logo h3{
         margin-top: 20px;
         text-align: initial;   
@@ -290,6 +343,7 @@ footer .footer_logo h3{
         font-size: 18px;
     
     }
+
     /* footer img{
         flex-direction: column;
         align-items: center;
@@ -313,6 +367,30 @@ footer .footer_logo h3{
         font-size: 18px;
     
     }
+    section .btn-t {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 1em;
+        margin-left: 12.5em;
+        width: 20%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+
 }
 
 
@@ -377,3 +455,79 @@ footer .footer_logo h3{
         margin-left: 50%;
     }
    }
+   @media screen and (max-width: 1220px){
+    section .btn-t {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 1em;
+        margin-left: 25.5em;
+        width: 20%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+
+   }
+   @media screen and (max-width: 1175px){
+    section .btn-t {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 1em;
+        margin-left: 23.5em;
+        width: 20%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+}
+@media screen and (max-width: 1080px){
+    section .btn-t {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 1em;
+        margin-left: 21.5em;
+        width: 20%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
+    }
+}
