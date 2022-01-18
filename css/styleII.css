@@ -371,7 +371,7 @@ footer .footer_logo h3{
         display: flex;
         align-items: center; 
         justify-content: center; 
-        margin-top: 1em;
+        margin: auto;
         margin-left: 12.5em;
         width: 20%;
         height: 50px;
@@ -407,6 +407,29 @@ footer .footer_logo h3{
     }
     section .btn{
         margin-left: 50%;
+    }
+    section .btn-t {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 1em;
+        margin-left: auto;
+        width: 20%;
+        height: 50px;
+        background: #000;
+        color: #000;
+        
+        font-size: 20px;
+        font-weight: 18.75em;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .5s ease all;
+        border-radius: 5px;
+        position: relative; 
+        overflow: hidden; 
+        background-color: #f0c44e;
+        
     }
    }
 @media screen and (max-width: 751px){
