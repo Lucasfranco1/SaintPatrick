@@ -1,8 +1,21 @@
+/* Own color variables, use :root to accesss to the css */
+/* Creamos nuestras variables, mediante :root accedemos a la ruta de css */
+:root{
+    --yellow: #f0c44e;
+    --blue-green-dark: #095757;
+    --nav:#e9f5f5;
+    --blue-green:#72ada0;
+    --light-blue:#78b4b6;
+}
+/*For all browsers to look alike */
+/* Para que en todos los navegadores se vea igual */
 *{
     margin: 0;
     padding: 0;
 }
 body{
+	background: #fff;
+    font-family: 'Roboto';
     margin: auto;
 }
 .w-100 {
@@ -18,7 +31,6 @@ body{
 .container-elements{
     display: flex;
     flex-direction: row;    
-    /* justify-content: space-between; */
     justify-items: space;
 }
 .container-elements img{
@@ -49,8 +61,7 @@ body{
 	width: 57%;
 	height: 50px;
 	background: #fff;
-	color: rgb(7, 96, 128);
-	
+	 /*color: rgb(7, 96, 128);*/
 	font-size: 20px;
 	font-weight: 18.75em;
 	border: none;
