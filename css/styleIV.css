@@ -37,9 +37,8 @@ header{
 /* Para acceder al header del contenedor */
 header .container{
     display: flex;
-    justify-content: flex-start; 
-    
-    align-items: left;   
+    justify-content: space-between; 
+    align-items: center;   
 }
 header .container img{
     margin-left: 3.33em;
@@ -52,7 +51,7 @@ header .container img{
 
 }
 header .container h2{
-    margin-left: 100px;
+    margin-right: 500px;
     font-weight:bold;
 }
 
@@ -64,6 +63,31 @@ header .logo{
 
 }
 
+header .navar a{    
+    letter-spacing: 5px;         
+    margin-bottom: 20px;
+}
+
+header .navar a{    
+    
+
+    font-size: 20px;
+    margin-right: 75px;
+    margin-left: -50px;    
+    color: #aaa;
+    
+    /* text decoration para quitarle los subrayados */
+    text-decoration: none;   
+    
+}
+
+/* El primer enlace activo, mientras que si paso el cursor sobre los otros habrá un efecto hover*/
+header nav a:hover,
+header nav a.active{
+    
+    color:#000;    
+    background-color: #f0c44e;
+}
 
 /*************** MAIN *************/
 
@@ -96,9 +120,7 @@ main{
 section .container-center{
     display: flex;
     justify-content: center;
-  flex-direction: column;
-    text-align: center;
-    align-items: center;
+    align-content: center;
     
 }
 section .container{
@@ -116,22 +138,81 @@ section .container{
     border-radius: 23px;
     
 }
-
-
-.super-container{
+section .container .info {
+    
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;    
+    align-content: center;
+    
+}
+section .container .son-info{
+    
+    
+}
+.container h3{
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    margin-left: 60px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.container h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    font-weight: 300;
+    font-size: 30px;
 }
 
 
-/* alert */
+section .container .info .son-info h2,
+section .container .info .son-info h3,
+section .container .info .son-info h4,
+section .container .info .son-info h5{
+    line-height: 2.0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: 50px;
+    font-weight: 200;
+    font-size: 30px;
+}
+section .container .info .son-info h3{
+    font-weight: 200;
+    font-size: 20px;
+}
 
+section .container .info .son-info h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+section .container .info .son-info h5{
+    font-weight: bolder;
+    color: #aaa;
+    font-size: 30px;
+}
+section .container .info .son-info span{
+    margin-left: 8px;
+    font-weight: 400;    
+    color: #aaa;
+    font-size: 30px;
+}
+
+/* alert */
+section .container-alert{
+    margin-left: -640px;
+    margin-right: 100px;
+    margin-top: -50px;
+}
 section .alert{
-    
-    /* margin-top: 350px;
-    margin-left:130px;*/
+    margin-top: 350px;
+    margin-left:130px;
     text-align: center;
     font-size: 30px;
     width: 13em;
@@ -145,13 +226,6 @@ section .alert{
     
     
 }
-.message-alert{
-    
-    margin-top: 50px;
-    font-weight: 200;
-    font-size: 20px;
-    font-style: black;
-}
 
 section .alert h3{
     font-size: 30px;
@@ -159,40 +233,9 @@ section .alert h3{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
-.button{
-    margin: auto;
-	margin-top: 2em;
-     /* margin-bottom: 2em; 
-	 margin-left: 32.5em;  */
-	width: 200px;
-	height: 60px;
-	background: #000;
-	color: #000;
-	
-	font-size: 20px;
-	font-weight: 18.75em;
-	border: none;
-	cursor: pointer;
-	text-transform: uppercase;
-    transition: .5s ease all;
-	border-radius: 15px;
-	position: relative; 
-	overflow: hidden; 
-	background-color: #f0c44e;
-    
-}
-
-section .button:hover{
-    color: #000;
-    filter: drop-shadow(0 0 5px var(--yellow)) drop-shadow(0 0 15px var(--yellow));
-}
-section .btn ico-icon{
-    --ionicon-stroke-width: 50px;
-
-}
 /* Footer */
 
 footer{
@@ -203,31 +246,19 @@ footer{
    
 	
 }
-footer .footer_logo{
-    display: flex;
-    justify-content: flex-start; 
-     
-}
-footer img{
-    
-    margin-left: 5.5em;
-	width: 50px;
-	height: 50px;
-    margin-top: 5px;           
-    
-}
 
-footer .footer_logo h3{
-    margin: auto;
-    margin-top: 20px;
-    font-weight: 400;    
-    margin-left: 29em; 
-    font-size: 18px;
+.footer_logo .copy{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: normal;
+    
+    
 
 }
 
 .super-container{
-    min-height: calc(100vh - 275px);
+    min-height: calc(100vh - 245px);
 }
 
 
@@ -247,9 +278,9 @@ footer .footer_logo h3{
        
     }
     header .container h2{
-        margin-top:-55px;
+        margin-top:15px;
         margin-right: 5px;
-        font-weight:400;
+        font-weight:700;
     }
     header .navar{
         margin-top: 20px;
@@ -265,7 +296,7 @@ footer .footer_logo h3{
         margin-top: 20px;
         text-align: initial;   
         font-weight: 400;
-        margin-left: 200px;
+        margin-left: 50%;
         font-size: 18px;
     
     }
@@ -290,22 +321,6 @@ footer .footer_logo h3{
         margin-left: 160px;
         font-size: 18px;
     
-    }
-    header .logo{
-        margin-bottom: 10px;
-        font-size: 10px;
-        text-align: center;
-    }
-
-    header .container {
-        flex-direction: column;
-        text-align: center;
-       
-    }
-    header .container h2{
-        margin-top:10px;
-        margin-right: -40px;
-        font-weight:500;
     }
     
 
@@ -494,7 +509,7 @@ footer .footer_logo h3{
         margin-left: -6px;
         margin-right: 50px;
         font-weight: 200;
-        font-size: 14px;
+        font-size: 10px;
     }
     section .container .info .son-info h3{
         font-weight: 200;
@@ -516,7 +531,12 @@ footer .footer_logo h3{
         font-weight: 300;
         font-size: 15px;
     }
-    
+    section .container-center{
+        margin-left: 40px;
+    }    
+    footer .copy{
+        margin-left: -300px;
+    }
     section .container .info .son-info h4{
         font-weight: 400;
         font-size: 13px;
@@ -536,7 +556,7 @@ footer .footer_logo h3{
     }
     section .alert{
         margin-top: 350px;
-        margin-left:130px;
+        margin-left:30px;
         text-align: center;
         font-size: 30px;
         width: 13em;
@@ -577,7 +597,7 @@ footer .footer_logo h3{
         margin-top: 20px;
         text-align: initial;   
         font-weight: 400;
-        margin-left: 100px;
+        margin-left: 0;
         font-size: 14px;
     
     }
@@ -597,9 +617,9 @@ footer .footer_logo h3{
        
     }
     header .container h2{
-        margin-top:0px;
-        margin-right: 40px;
-        font-weight:400;
+        margin-top:10px;
+        margin-right: -40px;
+        font-weight:500;
     }
     header .navar{
         margin-top: 20px;
