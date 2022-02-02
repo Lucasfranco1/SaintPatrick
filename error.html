@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Patrick's Bank</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/error_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link href="css/four.css" rel="stylesheet">	
+</head>
+<body>
+    <!-- HEADER -->
+  
+    <header>
+        <div class="container">
+            <img src="img/logo.png" alt="" >
+            <h2 class="logo">St Patrick's Bank</h2>
+        </div>
+        
+    </header>
+    <br>
+    <br>
+    <!-- MAIN -->
+    <div class="super-container">     
+         <section>        
+            <div class="container-center">
+                 <h1 th:text="${codigo}"></h1>
+                 <h2 th:text="${mensaje}"></h2>
+            </div>
+            <div class="container-center">
+                <div >
+                    <button class= "button"><a th:href="@{/main}" class="active"></a><span style="color:#000">Home</span></button>
+                  </div>
+            </div>
+         </section>
+               
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer_logo">
+            <h3>Copyright @ 2022 By SP</h3>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
